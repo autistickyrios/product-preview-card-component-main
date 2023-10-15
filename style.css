@@ -1,0 +1,161 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* General Styling */
+
+body {
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.875rem;
+  background-color: hsl(30, 38%, 92%);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  margin: 2rem;
+}
+
+/* Utilities */
+
+.price-section {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* product section*/
+.product {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 653px;
+}
+.product-data {
+  padding: 2.2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  font-size: 3.2rem;
+  color: hsl(212, 21%, 14%);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.product-description {
+  font-size: 1.4rem;
+}
+
+.product-price {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.original-price {
+  text-decoration: line-through;
+}
+
+.price-section {
+  font-size: 1.4rem;
+  align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(158, 36%, 37%);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  padding: 1.2rem;
+  border-radius: 0.9rem;
+  border: 0;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: hsl(158, 36%, 20%);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 40em) {
+  .product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-data {
+    padding: 3rem;
+  }
+}
