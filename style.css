@@ -60,7 +60,13 @@ html {
 
 /* General Styling */
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 body {
+  height: 100vh;
   font-family: "montserrat", sans-serif;
   font-weight: 500;
   color: hsl(228, 12%, 48%);
@@ -69,7 +75,6 @@ body {
   display: grid;
   place-content: center;
   min-height: 100vh;
-  margin: 2rem;
 }
 
 /* Utilities */
